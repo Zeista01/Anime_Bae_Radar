@@ -1,0 +1,293 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #f5d9d2;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0.5em;
+    text-shadow: 2px 2px 4px #000;
+}
+
+#main-title {
+    position: relative;
+    top: -2em;
+}
+
+p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0.5em 0;
+    font-family: 'Great Vibes', cursive;
+    color: #ddaaaa;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1em;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.button:hover {
+    background-color: #ff1493;
+}
+
+h3 {
+    color:#380a22 ;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #f5d9d2;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #f5d9d2;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px #000;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0cm;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+nav:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+    font-size: 1em;
+}
+
+nav a {
+    color: #f5d9d2;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ff69b4;
+    color: white;
+    border-radius: 1px;
+    padding: 0.1em 0.1em;
+}
+
+.header-color {
+    color: #ff69b4;
+    text-align: center;
+}
+
+#question-container {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+#question-container button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+#question-container button:hover {
+    background-color: #ff1493;
+}
+
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url('../images/sample2.jpg');
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+        margin: 0.5em 0;
+        font-family: 'Great Vibes', cursive;
+        color: #f750d0;
+        text-shadow: 2px -1px 3px #000000;
+    }
+
+    .button {
+        font-size: 1.2em;
+        padding: 0.8em 1.5em;
+    }
+
+    #question-container h3 {
+    margin-bottom: 20px;
+    color: rgb(220, 0, 157);
+    text-shadow: 1px -1px 3px rgba(0, 0, 0, 0.8);
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    font-size: 3em; /* This increases the font size */
+    }
+
+    nav a:hover {
+        background-color: #ff69b4;
+        color: white;
+        border-radius: 1px;
+        padding: 0.1em 0.1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0.2em;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url('../images/pic3.jpg');
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1.5em;
+        color: bisque;
+    }
+
+    .button {
+        font-size: 1.5em;
+        padding: 1em 2em;
+    }
+
+    #question-container h3 {
+        margin-bottom: 20px;
+        color: rgb(70, 0, 0);
+        font-family: 'Dancing Script', cursive;
+        font-style: italic;
+    }
+
+    nav a:hover {
+        background-color: #ff69b4;
+        color: white;
+        border-radius: 1px;
+        padding: 0.8em 0.8em;
+    }
+
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        color: #f5d9d2;
+    }
+
+    li {
+        margin: 5px;
+        font-size: 1em;
+        color: #f5d9d2;
+    }
+}
+
+.about-me {
+    text-align: center;
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-me h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #ff69b4;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.about-me p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #f5d9d2;
+    text-shadow: 1px 1px 3px #000;
+}
