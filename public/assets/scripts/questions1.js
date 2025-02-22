@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function findMatch() {
-    fetch('https://anime-bae-radar-git-main-zans-projects-9183aca1.vercel.app', {
+    fetch('https://anime-bae-radar.vercel.app/findMatch', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
