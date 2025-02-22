@@ -5,6 +5,7 @@ const mysql = require('mysql2');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
+import { Analytics } from "@vercel/analytics/react"
 const app = express();
 app.use(cors());
 app.use((req, res, next) => {
