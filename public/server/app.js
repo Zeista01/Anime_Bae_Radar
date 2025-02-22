@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://animebaeradar.freewebhostmost.com');
+    res.header('Access-Control-Allow-Origin', 'https://anime-bae-radar-git-main-zans-projects-9183aca1.vercel.app/');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     next();
