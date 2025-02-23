@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function findMatch() {
-    fetch('https://anime-bae-radar.vercel.app/findMatch', { 
+    fetch('/findMatch', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userPreferences)
