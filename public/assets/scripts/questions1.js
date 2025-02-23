@@ -92,11 +92,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function findMatch() {
-    fetch('https://anime-bae-radar.vercel.app/findMatch', {
+    fetch('https://anime-bae-radar.vercel.app/findMatch', {  // Ensure this is the correct API endpoint
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userPreferences)
     })
     .then(response => {
@@ -122,6 +120,7 @@ function findMatch() {
         document.getElementById('question-container').innerHTML = `<h3>Sorry, an error occurred. Please try again later.</h3>`;
     });
 }
+
 
 function displayResult(name, image) {
     const questionContainer = document.getElementById('question-container');
