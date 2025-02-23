@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function findMatch() {
-    fetch('/findMatch', {  // Use relative path for API endpoint
+    fetch('https://anime-bae-radar.vercel.app/findMatch', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userPreferences)
