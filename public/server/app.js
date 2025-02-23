@@ -5,9 +5,9 @@ const { Pool } = require('pg');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-import { inject } from '@vercel/analytics';
- 
+const { inject } = require('@vercel/analytics');
 inject();
+
 
 const app = express();
 app.use(cors());
