@@ -76,7 +76,6 @@ function displayQuestion(index) {
     questionContainer.appendChild(questionElement);
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     const urlParams = new URLSearchParams(window.location.search);
     const name = urlParams.get('name');
@@ -92,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function findMatch() {
-    fetch('https://anime-bae-radar.vercel.app/findMatch', {  // Ensure this is the correct API endpoint
+    fetch('/findMatch', {  // Use relative path for API endpoint
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(userPreferences)
@@ -121,7 +120,6 @@ function findMatch() {
     });
 }
 
-
 function displayResult(name, image) {
     const questionContainer = document.getElementById('question-container');
     questionContainer.innerHTML = `
@@ -129,7 +127,7 @@ function displayResult(name, image) {
             <img src="${image}" alt="${name}" style="max-width: 100%; height: auto;">
             <h3 style="margin-top: 10px;">Your match is ${name}!</h3>
             <button id="share-button">Share your match</button>
-            <p class="share-warning">When sharing your results, please ensure your friend copies the full link and pastes it into their browser..</p>
+            <p class="share-warning">When sharing your results, please ensure your friend copies the full link and pastes it into their browser.</p>
         </div>
     `;
 
@@ -148,7 +146,6 @@ function displayResult(name, image) {
         shareButton.style.display = 'none';
     }
 }
-
 
 function updateOGImage(imageUrl) {
     let ogImageTag = document.querySelector('meta[property="og:image"]');
