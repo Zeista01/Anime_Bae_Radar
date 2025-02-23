@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/findMatch",
-      "dest": "/server/app.js"
+      "dest": "/api/app.js"
     },
     {
       "src": "/(.*)",
