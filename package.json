@@ -11,6 +11,7 @@
     "pg": "^8.10.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.0.3",
+    "@vercel/node": "^5.1.8",
     "@vercel/analytics": "^1.0.0"
   }
 }
