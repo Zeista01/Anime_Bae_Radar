@@ -1,15 +1,15 @@
-const port = process.env.PORT || 3000;
 const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
-const { inject } = require('@vercel/analytics');
-inject();
-
+const { inject } = require('@vercel/analytics'); // Import Vercel Analytics
+inject(); // Inject the analytics script
 
 const app = express();
+
+// Middleware
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.json());
@@ -70,4 +70,8 @@ app.post('/findMatch', async (req, res) => {
     }
 });
 
-app.listen(port, () => console.log(`App is running on port ${port}`));
+// Serve static files from the public directory
+app.use(express.static('public'));
+
+// Export the app for Vercel
+module.exports = app;
